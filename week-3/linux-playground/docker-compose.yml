@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ubuntu-lab:
+    image: ubuntu:latest
+    container_name: my-linux-lab
+    # This keeps the container running so it doesn't close immediately
+    tty: true
+    stdin_open: true
+    # This maps the volume
+    volumes:
+      - ./:/root/workspace
+    # This sets the working directory when you log in
+    working_dir: /root/workspace

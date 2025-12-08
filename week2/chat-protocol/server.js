@@ -1,3 +1,5 @@
+// server code
+
 import net from "node:net";
 
 const clients = [];
